@@ -93,3 +93,11 @@ form.addEventListener('submit', e => {
     })
     .catch(error => console.error('Error!', error.message))
 })
+
+function clearFormFields() {
+  document.getElementById("full_name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("mobile_number").value = "";
+  document.getElementById("email_subject").value = "";
+  document.getElementById("message").value = "";
+}
