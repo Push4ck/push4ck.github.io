@@ -96,11 +96,11 @@ form.addEventListener('submit', e => {
 
 document.addEventListener("DOMContentLoaded", function() {
   var sendButton = document.querySelector(".btn");
-  sendButton.addEventListener("click", function() {
-    document.getElementById("full_name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("mobile_number").value = "";
-    document.getElementById("email_subject").value = "";
-    document.getElementById("message").value = "";
+
+  sendButton.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the form from submitting
+
+    // Clear the form fields
+    document.querySelector("form").reset();
   });
 });
