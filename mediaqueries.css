@@ -17,6 +17,14 @@
     padding-bottom: 7rem;
   }
 
+  .services-container {
+    display: inline-block;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
   .projects {
     padding-bottom: 7rem;
   }
