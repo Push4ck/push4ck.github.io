@@ -93,14 +93,3 @@ form.addEventListener('submit', e => {
     })
     .catch(error => console.error('Error!', error.message))
 })
-
-document.addEventListener("DOMContentLoaded", function() {
-  var sendButton = document.querySelector(".btn");
-
-  sendButton.addEventListener("click", function(event) {
-    event.preventDefault(); // Prevent the form from submitting
-
-    // Clear the form fields
-    document.querySelector("form").reset();
-  });
-});
