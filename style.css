@@ -26,10 +26,6 @@ html {
   overflow: auto;
 }
 
-.logo {
-    width: 100px;
-}
-
 body {
   background: var(--bg-color);
   color: var(--text-color);
