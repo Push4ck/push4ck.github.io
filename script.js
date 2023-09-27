@@ -94,12 +94,13 @@ form.addEventListener('submit', e => {
     .catch(error => console.error('Error!', error.message))
 })
 
-$(document).ready(function() {
-  $(".btn").click(function() {
-    $("#full_name").val("");
-    $("#email").val("");
-    $("#mobile_number").val("");
-    $("#email_subject").val("");
-    $("#message").val("");
+document.addEventListener("DOMContentLoaded", function() {
+  var sendButton = document.querySelector(".btn");
+  sendButton.addEventListener("click", function() {
+    document.getElementById("full_name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("mobile_number").value = "";
+    document.getElementById("email_subject").value = "";
+    document.getElementById("message").value = "";
   });
 });
