@@ -93,3 +93,14 @@ form.addEventListener('submit', e => {
     })
     .catch(error => console.error('Error!', error.message))
 })
+
+// Google tag (gtag.js)
+const GA_TRACKING_ID = 'G-PBTQ3W4PLY';
+
+(function() {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', GA_TRACKING_ID);
+})();
