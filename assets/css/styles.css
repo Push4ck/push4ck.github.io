@@ -779,6 +779,7 @@ img {
 }
 
 .portfolio__description {
+  text-align: justify;
   margin-bottom: var(--mb-0-75);
 }
 
